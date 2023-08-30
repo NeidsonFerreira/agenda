@@ -17,3 +17,8 @@ while(sair==False):
         novo_contato.append(telefone)
         agenda.append(novo_contato)
         os.system('cls')
+    if(opcao==2):
+        for contato in agenda:
+            print("\nNome:",contato[0],"Telefone:",contato[1],"\n")
+    
+    
