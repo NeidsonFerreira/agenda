@@ -21,4 +21,14 @@ while(sair==False):
         for contato in agenda:
             print("\nNome:",contato[0],"Telefone:",contato[1],"\n")
     
-    
+     if(opcao==3):
+        nome=input("\nDigite o nome do Contato a Editar:")
+        for i in range(len(agenda)):
+            if(agenda[i][0]==nome):
+                novo_nome=input("Digite o Novo Nome do Contato:")
+                novo_telefone=input("Digite o Novo Telefone do Contato:")
+                agenda[i][0]=novo_nome
+                agenda[i][0]=novo_telefone
+                os.system('cls')
+                break
+        
