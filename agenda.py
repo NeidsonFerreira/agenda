@@ -16,12 +16,12 @@ while(sair==False):
         telefone=input("Digite o Telefone do Contato:")
         novo_contato.append(telefone)
         agenda.append(novo_contato)
-        os.system('cls')
+        os.system('cls')            
     if(opcao==2):
         for contato in agenda:
             print("\nNome:",contato[0],"Telefone:",contato[1],"\n")
     
-     if(opcao==3):
+    if(opcao==3):
         nome=input("\nDigite o nome do Contato a Editar:")
         for i in range(len(agenda)):
             if(agenda[i][0]==nome):
@@ -31,4 +31,5 @@ while(sair==False):
                 agenda[i][0]=novo_telefone
                 os.system('cls')
                 break
+    
         
